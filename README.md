@@ -2,8 +2,23 @@
 
 ```
 
+// install modules
 npx create-next-app@latest
 npm install @heroicons/react @supabase/auth-helpers-nextjs @supabase/supabase-js zustand supabase date-fns
+
+
+// generate and copy token, and paste terminal
+npx supabase login
+// Generate VS Code workspace settings? : y
+npx supabase init
+// link local project and supabase project
+// supabase project id: supabase > settings > [Reference ID]
+// database password: 最初にDB作ったときの
+npx supabase link --project-ref khasokhccfctnnfdrasv
+//
+npx supabase gen types typescript --linked > database.types.ts
+
+
 ```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

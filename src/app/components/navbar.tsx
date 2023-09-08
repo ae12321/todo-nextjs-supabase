@@ -4,12 +4,12 @@ export default function NavBar() {
   return (
     <header className="bg-blue-500 p-4">
       <nav className="space-x-5">
-        {/* <Link
+        <Link
           href="/"
           className="bg-blue-300 py-2 px-4 rounded text-black hover:bg-blue-100"
         >
           Home
-        </Link> */}
+        </Link>
         <Link
           href="/blogs"
           className="bg-blue-300 py-2 px-4 rounded text-black hover:bg-blue-100"
